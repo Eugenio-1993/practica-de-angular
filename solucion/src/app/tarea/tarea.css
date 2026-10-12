@@ -1,0 +1,36 @@
+/* :host es la etiqueta <app-tarea> en sí misma */
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #151517;
+  border: 1px solid #2a2a2e;
+  border-radius: 8px;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.hecha {
+  text-decoration: line-through;
+  color: #6b6b70;
+}
+
+.borrar {
+  background: none;
+  border: none;
+  color: #6b6b70;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.borrar:hover {
+  color: #e82127;
+}

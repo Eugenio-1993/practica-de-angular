@@ -1,0 +1,33 @@
+<main class="contenedor">
+  <h1>{{ titulo }}</h1>
+  <p class="contador">Pendientes: {{ pendientes() }}</p>
+
+  <div class="nueva">
+    <input
+      #entrada
+      type="text"
+      placeholder="¿Qué tienes que hacer?"
+      (keyup.enter)="agregar(entrada.value); entrada.value = ''"
+    />
+    <button type="button" class="agregar" (click)="agregar(entrada.value); entrada.value = ''">
+      Agregar
+    </button>
+  </div>
+
+  @if (tareas().length === 0) {
+    <p class="vacio">No tienes tareas. ¡Agrega la primera!</p>
+  } @else {
+    <ul class="lista">
+      @for (t of tareas(); track t.id) {
+        <li>
+          <app-tarea
+            [texto]="t.texto"
+            [hecha]="t.hecha"
+            (alternar)="alternar(t.id)"
+            (eliminar)="eliminar(t.id)"
+          />
+        </li>
+      }
+    </ul>
+  }
+</main>

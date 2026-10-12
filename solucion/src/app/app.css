@@ -1,0 +1,68 @@
+.contenedor {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+}
+
+.contador {
+  color: #8a8a8f;
+  margin: 0 0 32px;
+}
+
+.nueva {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.nueva input {
+  flex: 1;
+  padding: 12px 14px;
+  background: #151517;
+  border: 1px solid #2a2a2e;
+  border-radius: 8px;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.nueva input:focus {
+  outline: none;
+  border-color: #f2f2f2;
+}
+
+.agregar {
+  padding: 0 20px;
+  background: #f2f2f2;
+  color: #0b0b0c;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.agregar:hover {
+  background: #ffffff;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vacio {
+  color: #8a8a8f;
+  text-align: center;
+  padding: 32px 0;
+}

@@ -1,0 +1,6 @@
+<label class="fila">
+  <input type="checkbox" [checked]="hecha()" (change)="alternar.emit()" />
+  <span [class.hecha]="hecha()">{{ texto() }}</span>
+</label>
+
+<button type="button" class="borrar" aria-label="Eliminar tarea" (click)="eliminar.emit()">✕</button>
