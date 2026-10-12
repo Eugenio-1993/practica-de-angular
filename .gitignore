@@ -1,0 +1,16 @@
+# Tu proyecto personal del reto: se queda en tu disco, no se sube.
+reto-tareas/
+
+# Node (por si agregas proyectos nuevos)
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Compilados
+/dist
+/tmp
+/out-tsc
+
+# Sistema
+.DS_Store
+Thumbs.db
